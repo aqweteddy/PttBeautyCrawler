@@ -1,10 +1,12 @@
 import os
+import time
 from crawler import PttCrawlerMongoDB
 
+page = 100
 
 def main():
     print(1)
-    db = PttCrawlerMongoDB(board='Beauty', pages=10)
+    db = PttCrawlerMongoDB(board='Beauty', pages=page)
     # a.timer(3600, 10)
     # os.system('scrapy crawl ptt -a board=EZSoft -a pages=2')
     # os.system('scrapy crawl ptt -a board=Gossiping -a pages=100')
@@ -14,4 +16,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    while 1:
+        time.sleep(7200)
+        main()
+        page = 5
