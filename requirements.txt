@@ -15,7 +15,7 @@ certifi==2019.3.9
 cffi==1.11.5
 chardet==3.0.4
 constantly==15.1.0
-cryptography==2.5
+cryptography==3.2
 cssselect==1.0.3
 cycler==0.10.0
 decorator==4.4.0
